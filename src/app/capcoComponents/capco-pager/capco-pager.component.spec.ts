@@ -4,6 +4,8 @@ import {FormsModule} from '@angular/forms';
 
 import { CapcoPagerComponent } from './capco-pager.component';
 
+import {PowerPipe} from '../../capcoPipes/power.pipe'
+
 import { CapcoPagerService } from '../../capcoService/capcopagingservice/pager-service.service';
 
 describe('CapcoPagerComponent', () => {
@@ -14,7 +16,7 @@ describe('CapcoPagerComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [FormsModule],
-      declarations: [ CapcoPagerComponent ],
+      declarations: [ CapcoPagerComponent, PowerPipe ],
       providers: [CapcoPagerComponent, CapcoPagerService]
     })
     .compileComponents();

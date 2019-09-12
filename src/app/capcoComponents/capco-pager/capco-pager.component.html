@@ -6,6 +6,7 @@
         <select name="selectedPageSize" class="pagersizeselector" [(ngModel)]="selectedPageSize"  (change)="setPagesize(selectedPageSize)">
             <option *ngFor="let pagesize of capcoPageSizes; let i=index">
               {{pagesize}}
+              <!-- {{pagesize| power : 1| ellipsis:['(',')']}} -->
             </option>
         </select>
     </div>

@@ -8,6 +8,7 @@ import { FormsModule} from '@angular/forms';
 
 import { CapcoFakeEndPointInterceptors} from '../../Interceptors/CapcoFakeEndPoint.intcerptor';
 
+import {PowerPipe} from '../../capcoPipes/power.pipe';
 
 import {HttpClient, HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 
@@ -21,7 +22,7 @@ describe('CopcoTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CopcoTableComponent, CapcoPagerComponent ],
+      declarations: [ CopcoTableComponent, CapcoPagerComponent , PowerPipe],
       imports: [HttpClientModule, FormsModule],
       providers: [CapcoPagerService,
         CapcoSampleService ,

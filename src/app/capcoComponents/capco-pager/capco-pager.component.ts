@@ -14,7 +14,7 @@ export class CapcoPagerComponent implements OnInit {
   selectedPageSize: number;
 
   constructor(private pagerService: CapcoPagerService) {
-pagerService.capcoPager.subscribe(pager => {
+  pagerService.capcoPager.subscribe(pager => {
   this.capcoPager = pager;
 });
 
